@@ -2,7 +2,7 @@ name: hola mundo
 
 on:
   push:
-    branches:
+    branches: #Solo se ejecuta si se hace un push en las ramas listadas.
       - main
       - rama-2
       - rama-3
