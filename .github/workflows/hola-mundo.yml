@@ -1,8 +1,11 @@
 name: hola mundo
 
 on:
+  workflow_dispatch: # Indica que el workflow se puede ejecutar de manera manual.
+  # schedule:
+  #   - cron: "*/5 * * * *" # Se va a ejecutar cada 5 minutos. CON TIEMPOS TAN CORTOS NO VA BIEN.
   push:
-    branches: #Solo se ejecuta si se hace un push en las ramas listadas.
+    branches: # Solo se ejecuta si se hace un push en las ramas listadas.
       - main
       - rama-2
       - rama-3
